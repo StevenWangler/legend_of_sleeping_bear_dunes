@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ## Usage
 After installing, you can run the game using the following command:
 
-python```
+```
 python main.py
 ```
 
