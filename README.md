@@ -10,7 +10,7 @@
 
 To get started with "Legend of Sleeping Bear Dunes," clone this repository and install the required dependencies.
 
-bash ```
+```
 git clone https://github.com/yourusername/legend_of_sleeping_bear_dunes.git
 cd legend_of_sleeping_bear_dunes
 pip install -r requirements.txt
