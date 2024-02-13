@@ -33,7 +33,7 @@ We are thrilled to have you consider contributing to "Legend of Sleeping Bear Du
 2. **Clone Your Fork**: Clone your fork to your local machine, ensuring you have a local workspace to make your changes.
 
     ```
-    git clone https://github.com/yourusername/legend_of_sleeping_bear_dunes.git
+    git clone https://github.com/GRCC-CODE-RAIDERS/legend_of_sleeping_bear_dunes.git
     cd legend_of_sleeping_bear_dunes
     ```
 
