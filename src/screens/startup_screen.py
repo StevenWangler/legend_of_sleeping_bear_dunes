@@ -14,9 +14,13 @@ Constants:
 """
 import pygame
 
-BACKGROUND_COLOR = (0, 0, 0) 
+# Initialize all Pygame modules
+pygame.init()
+
+# Constants
+BACKGROUND_COLOR = (0, 0, 0)
 TEXT_COLOR = (255, 255, 255)
-FONT = pygame.font.Font(None, 36)
+FONT = pygame.font.Font("freesansbold.ttf", 36)
 MESSAGE = "The Legend of Sleeping Bear Dunes: The Game"
 
 def show_startup_screen(screen):
