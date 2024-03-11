@@ -10,7 +10,7 @@
 
 To get started with "Legend of Sleeping Bear Dunes," clone this repository and install the required dependencies.
 
-bash ```
+```
 git clone https://github.com/yourusername/legend_of_sleeping_bear_dunes.git
 cd legend_of_sleeping_bear_dunes
 pip install -r requirements.txt
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ## Usage
 After installing, you can run the game using the following command:
 
-python```
+```
 python main.py
 ```
 
@@ -33,7 +33,7 @@ We are thrilled to have you consider contributing to "Legend of Sleeping Bear Du
 2. **Clone Your Fork**: Clone your fork to your local machine, ensuring you have a local workspace to make your changes.
 
     ```
-    git clone https://github.com/yourusername/legend_of_sleeping_bear_dunes.git
+    git clone https://github.com/GRCC-CODE-RAIDERS/legend_of_sleeping_bear_dunes.git
     cd legend_of_sleeping_bear_dunes
     ```
 
