@@ -1,7 +1,7 @@
 import pygame
 import sys
 from screens.settings import SettingsScreen
-from app_settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS
+from settings.app_settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS
 
 class Menu:
 
@@ -72,10 +72,9 @@ class Menu:
         The method also highlights the menu options when the mouse hovers over them.
 
         Returns:
-            None
+            str: The name of the menu option that was clicked, or None if the menu is still running.
         """
-        running = True
-        while running:
+        while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -83,8 +82,7 @@ class Menu:
                 elif event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_pos = event.pos
                     if self.options_rects[0].collidepoint(mouse_pos):
-                        print("Start game")  # Placeholder for starting the game
-                        #running = False
+                        return 'start'
                     elif self.options_rects[1].collidepoint(mouse_pos):
                         print("Load game")  # Placeholder for loading a game
                     elif self.options_rects[2].collidepoint(mouse_pos):

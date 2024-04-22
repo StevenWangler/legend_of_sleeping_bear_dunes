@@ -16,27 +16,28 @@ Note:
 """
 import pygame
 import sys
-from events import handle_events
+from events.game import Game
 from screens import render
 from screens.menu import Menu
-from app_settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS 
+from settings.app_settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS  # import constants from app_settings.py
 
 def main():
     """
     The main function of the game.
     Initializes the game window, creates a menu instance, and runs the game loop.
     """
+    pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
 
-    menu = Menu(screen, clock)
-    menu.main_menu()
+    menu = Menu(screen, clock)  # Create a new instance of 'Menu'
+    menu_option = None
+    while menu_option != 'start':
+        menu_option = menu.main_menu()
 
-    running = True
-    while running:
-        running = handle_events()
-        render(screen)
-        clock.tick(FPS)
+    # Start the game
+    game = Game()
+    game.run(screen)
 
     pygame.quit()
     sys.exit()
