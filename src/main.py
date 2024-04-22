@@ -19,7 +19,7 @@ import sys
 from events.game import Game
 from screens import render
 from screens.menu import Menu
-from settings.app_settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS  # import constants from app_settings.py
+from settings.app_settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS
 
 def main():
     """
@@ -30,13 +30,13 @@ def main():
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
 
-    menu = Menu(screen, clock)  # Create a new instance of 'Menu'
+    menu = Menu(screen, clock)
     menu_option = None
     while menu_option != 'start':
         menu_option = menu.main_menu()
 
     # Start the game
-    game = Game()
+    game = Game(FPS)
     game.run(screen)
 
     pygame.quit()
